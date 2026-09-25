@@ -69,18 +69,17 @@ img {
 }
 
 .nav-links a {
-    color: #00ffcc;
+    color: #ffffff;
     text-decoration: none;
-    border: 1px solid #00ffcc;
     padding: 16px 32px;
     border-radius: 4px;
     transition: all 0.2s ease;
 }
 
 .nav-links a:hover {
-    background-color: #00ffcc;
+    background-color: #3fff66;
     color: #0a0a0a;
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    box-shadow: 0 0 30px rgba(0, 255, 38, 0.5);
 }
 
 @media (max-width: 768px) {
