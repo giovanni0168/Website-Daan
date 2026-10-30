@@ -7,13 +7,13 @@
 }
 
 body {
-    background-color: #23272e;
-    color: #ffffff;
-    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
-    padding: 20px;
+    padding: 2rem;
     font-family: Orbitron, sans-serif;
     font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main {
@@ -41,7 +41,8 @@ img {
 }
 
 .card {
-    background-color: #000000;
+    background-color: var(--card-bg);
+    color: var(--text-color);
     border: 1px solid #00ffcc;
     padding: clamp(15px, 3vw, 25px);
     border-radius: 8px;
@@ -53,7 +54,7 @@ img {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .logo img {
@@ -69,7 +70,7 @@ img {
 }
 
 .nav-links a {
-    color: #ffffff;
+    color: var(--text-color);
     text-decoration: none;
     padding: 16px 32px;
     border-radius: 4px;
@@ -156,7 +157,7 @@ img {
 }
 
 .hero-title h1 {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 3.5rem;
     text-shadow:
         0 0 5px #22ff00,
@@ -166,7 +167,7 @@ img {
 }
 
 .hero-title h2 {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.8rem;
     margin-top: -5px;
     text-shadow:
@@ -180,7 +181,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #2c2f33;
+    background-color: var(--surface-bg);
 }
 
 @font-face {
@@ -250,22 +251,72 @@ header {
     margin-top: 30px;
 }
 
+.catalog-intro,
+.catalog-note {
+    text-align: center;
+}
+
+.catalog-note {
+    color: var(--muted-text-color);
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 30px 0 45px;
+}
+
+.product-categories a {
+    color: var(--text-color);
+    background-color: var(--surface-bg);
+    border: 1px solid var(--accent-color);
+    border-radius: 8px;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+
+.product-categories a:hover,
+.product-categories a:focus-visible {
+    background-color: #3fff66;
+    color: #0a0a0a;
+}
+
+.product-category {
+    margin-bottom: 45px;
+    scroll-margin-top: 190px;
+}
+
+.product-category > h2 {
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+
+.category-description {
+    color: var(--muted-text-color);
+}
+
 .product-kaart {
     display: flex;
     align-items: center;
-    background-color: #2c2f33;
+    background-color: var(--surface-bg);
     border-radius: 12px;
     padding: 20px;
     gap: 25px;
 }
 
 .product-kaart img {
+    flex-shrink: 0;
     width: 150px;
     height: 150px;
     object-fit: contain;
     border-radius: 10px;
     padding: 10px;
-    background-color: #2c2f36;
+    background-color: var(--product-image-bg);
     border: 5px solid #ffffff;
     box-shadow:
         0 0 5px #00ff04,
@@ -278,7 +329,7 @@ header {
     font-family: 'Beon', sans-serif;
     font-size: 1.4rem;
     margin-bottom: 8px;
-    color: #ffffff;
+    color: var(--text-color);
     text-shadow:
         0 0 5px #ff0000,
         0 0 10px #ff0000,
@@ -286,24 +337,46 @@ header {
         0 0 20px #cc0000;
 }
 
-.product-info h4 {
+.product-info .product-prijs {
     font-family: 'Orbitron', sans-serif;
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 1.1rem;
     margin-bottom: 15px;
 }
 
 .product-info p {
-    color: #cccccc;
+    color: var(--muted-text-color);
     font-size: 0.95rem;
     line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .product-category {
+        scroll-margin-top: 470px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-kaart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .product-kaart img {
+        align-self: center;
+    }
+
+    .product-info {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
 }
 
 .nieuwsbrief {
     text-align: center;
     margin-right: 40px;
     margin-top: 70px;
-    color: #00ffcc;
+    color: var(--newsletter-color);
     text-decoration: none;
     border: 3px solid #00ffea;
     padding: 16px 32px;
@@ -318,12 +391,12 @@ header {
 
 footer {
     margin-top: 30px;
-    background-color: #2c2f33;
+    background-color: var(--surface-bg);
     height: 550px;
 }
 
 .nieuwsbrief a {
-    color: #00ff04;
+    color: var(--accent-color);
     transition: all 0.2s ease;
     font-size: 1.5rem;
 }
@@ -341,5 +414,53 @@ iframe {
 
 .adres {
     margin: 150px 0 0 0;
-    color: #ffffff;
+    color: var(--text-color);
+}
+
+:root {
+    color-scheme: light;
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --btn-bg: #f0f0f0;
+    --surface-bg: #f0f0f0;
+    --card-bg: #ffffff;
+    --border-color: #cccccc;
+    --accent-color: #08752a;
+    --product-image-bg: #f0f0f0;
+    --muted-text-color: #333333;
+    --newsletter-color: #08752a;
+}
+
+body.dark {
+    color-scheme: dark;
+    --bg-color: #23272e;
+    --text-color: #ffffff;
+    --btn-bg: #333333;
+    --surface-bg: #2c2f33;
+    --card-bg: #000000;
+    --border-color: #333333;
+    --accent-color: #00ff04;
+    --product-image-bg: #2c2f36;
+    --muted-text-color: #cccccc;
+    --newsletter-color: #00ffcc;
+}
+
+#theme-toggle {
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    flex-shrink: 0;
+    transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    opacity: 0.8;
 }

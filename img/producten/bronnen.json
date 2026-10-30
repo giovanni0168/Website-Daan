@@ -1,0 +1,62 @@
+[
+  {
+    "file": "laptop-nova.jpg",
+    "source": "https://unsplash.com/photos/gaming-laptop-displaying-a-first-person-shooter-game-O_UDOY0gM1Q",
+    "image": "https://images.unsplash.com/photo-1771015310937-6754da25e49a?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "laptop-apex.jpg",
+    "source": "https://unsplash.com/photos/a-laptop-computer-sitting-on-top-of-a-wooden-desk-gtZxq2Rpa_Y",
+    "image": "https://images.unsplash.com/photo-1684127987312-43455fd95925?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "pc-pulse.jpg",
+    "source": "https://unsplash.com/photos/a-close-up-of-a-computer-tower-with-many-wires-4Ykxp_t4i08",
+    "image": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "pc-titan.jpg",
+    "source": "https://unsplash.com/photos/a-computer-tower-with-a-black-screen-fMbiAi0rbkA",
+    "image": "https://images.unsplash.com/photo-1660855551550-2696677aaf28?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "monitor-vision.jpg",
+    "source": "https://unsplash.com/photos/monitor-keyboard-and-mouse-on-table-fj31I5HoOIQ",
+    "image": "https://images.unsplash.com/photo-1570993492881-25240ce854f4?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "monitor-ultrawide.jpg",
+    "source": "https://unsplash.com/photos/gaming-setup-with-multiple-monitors-displaying-game-art-qI1eL5b6lac",
+    "image": "https://images.unsplash.com/photo-1762219214808-154d74e0d761?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "keyboard-spark.jpg",
+    "source": "https://unsplash.com/photos/closeup-photography-of-mechanical-computer-keyboard-HIbAmybJHVs",
+    "image": "https://images.unsplash.com/photo-1520092352425-9699926a9b0b?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "keyboard-compact.jpg",
+    "source": "https://unsplash.com/photos/black-mechanical-keyboard-a661056QDbc",
+    "image": "https://images.unsplash.com/photo-1562819606-b7a0ebd7e7c5?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "mouse-precision.jpg",
+    "source": "https://unsplash.com/s/photos/mouse",
+    "image": "https://images.unsplash.com/photo-1613141411244-0e4ac259d217?auto=format&fit=crop&w=800&q=85",
+    "license": "https://unsplash.com/license"
+  },
+  {
+    "file": "headset-echo.jpg",
+    "source": "https://www.pexels.com/photo/modern-gaming-setup-with-headset-and-mouse-28993064/",
+    "image": "https://images.pexels.com/photos/28993064/pexels-photo-28993064.jpeg?auto=format&fit=crop&w=800&q=85",
+    "license": "https://www.pexels.com/license/"
+  }
+]
